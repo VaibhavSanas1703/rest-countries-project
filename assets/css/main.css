@@ -1,0 +1,250 @@
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins',sans-serif;
+}
+
+h1{
+     font-size: 1.4rem;
+     font-weight: 600;
+}
+
+.flex{
+     display: flex;
+}
+
+.navbar{
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     justify-content: space-between;
+     align-items: center;
+     height: 70px;
+     padding: 0 50px;
+     border-bottom: 1px solid #ddd;
+     z-index: 1;
+     background: #fff;
+}
+
+.dark-mode{
+     gap: 5px;
+     align-items: center;
+}
+
+.dark-mode i{
+     font-size: 20px;
+}
+
+.dark-mode p{
+     font-size: 17px;
+     cursor: pointer;
+}
+
+
+.search-container{
+     width: 100%;
+     height: 45px;
+     padding: 0px 50px;
+     margin-top: 90px;
+     justify-content: space-between;
+     /* z-index: 10; */
+     position: relative;
+}
+
+.search-container .main-search-box {
+     width: 100%;
+     height: 100%;
+}
+
+.search-container input{
+     width: 400px;
+     height: 100%;
+     padding: 0 20px;
+     outline: none;
+     border: 0;
+     border-radius: 10px;
+     font-size: 15px;
+     border: 1px solid #ddd;
+}
+
+.search-list{
+     width: 400px;
+     height: auto;
+     max-height: 400px;
+     background: #fff;
+     overflow: auto;
+     padding: 10px 0;
+     border-radius: 10px;
+     display: none;
+     position: absolute;
+}
+
+.search-list ul{
+     width: 100%;
+     list-style: none;
+     padding: 10px 20px;
+}
+
+.search-list ul li{
+     width: 100%;
+     margin-top: 6px;
+     padding: 10px 0px;
+     cursor: pointer;
+     transition: color .3s;
+}
+
+.search-list ul li:hover{
+     color: rgba(0,0,0,0.5);
+}
+
+::placeholder{
+     color: rgba(0,0,0,0.4);;
+}
+
+#selectCountry{
+     width: 200px;
+     padding: 0 10px;
+     font-size: 15px;
+     outline: none;
+     border: 1px solid #ddd;
+     /* box-shadow:  0 1px 2px rgba(0,0,0,0.1); */
+     border-radius: 10px;
+     height: 100%;
+     cursor: pointer;
+}
+
+option{
+     cursor: pointer;
+}
+
+::-webkit-inner-spin-button{
+     padding: 0 10px;
+}
+
+.country-container{
+     width: 100%;
+     height: auto;
+     padding: 20px 50px;
+     margin-top: 20px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-gap: 40px;
+}
+
+#loading{
+     width: 100%;
+     text-align: center;
+}
+
+.country-container a{
+     text-decoration: none;
+     height: 500px;
+     color: #111;
+     box-shadow: 0 4px 3px rgba(0,0,0,0.1);
+     border-radius: 10px;
+     transition: transform .2s;
+}
+
+/* .country-container a:hover{
+     transform: scale(1.01);
+} */
+
+ .flag-image{
+     width: 100%;
+     height: 220px;
+}
+
+.flag-image img{
+     width: 100%;
+     height: 90%;
+     object-fit: cover;
+     object-position: center;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+}
+
+.content{
+     margin-top: 30px;
+     padding: 0 18px;
+}
+
+.content h1{
+     font-size: 1.8rem;
+     margin-top: 20px;
+     font-weight: 500;
+}
+
+.country-content p b{
+     font-weight: 500;
+}
+
+.country-content{
+     flex-direction: column;
+     gap: 2px;
+     margin-top: 40px;
+}
+
+@media (max-width:1480px){
+     .country-container{
+     grid-template-columns: repeat(3, 1fr);
+     }
+}
+
+@media (max-width:1096px){
+     .country-container{
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+
+@media (max-width:768px){
+     .country-container{
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+     .country-container{
+          padding: 20px 15px;
+     }
+
+     .navbar{
+          padding: 0 15px;
+     }
+     
+     .search-container{
+          width: 100%;
+          height: auto;
+          flex-direction: column;
+          justify-content: center;
+          height: 100px;
+          /* margin-bottom: 20px; */
+          padding: 0 15px;
+          gap: 10px;
+     }
+
+     #selectCountry{
+          width: 100%;
+     }
+
+     .main-search-box{
+          width: 100%;
+     }
+
+     .main-search-box input{
+          width: 100%;
+          height: 100%;
+     }
+
+     .search-list{
+          width: 100%;
+     }
+
+     .logo .main__logo{
+          font-size: 1.2rem;
+     }
+
+     .dark-mode p{
+          font-size: 16px;
+     }
+}

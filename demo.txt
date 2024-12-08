@@ -1,0 +1,25 @@
+<div class="country-flag">
+               <img src="https://flagcdn.com/sl.svg" alt="">
+          </div>
+          <div class="country-info-content">
+               <div class="heading">
+                    <h1>Grenada</h1>
+               </div>
+               <div class="country-info">
+                    <div class="country-info-details">
+                    <p><b>Native name : </b>JAJA</p>
+                    <p><b>Population: </b>1,29,400400</p>
+                    <p><b>Region : </b>JAJA</p>
+                    <p><b>Sub Region : </b>JAJA</p>
+                    <p><b>Capital : </b>JAJA</p>
+                    </div>
+                    <div class="country-top">
+                         <p><b>Top Level Domain : </b>JAJA</p>
+                         <p><b>Currencies : </b>1,29,400400</p>
+                         <p><b>Languages : </b>JAJA</p>
+                    </div>
+               </div>
+               <div class="border-countries">
+                    <p><b>Border Countries : </b>JAJA</p>
+               </div>
+          </div>

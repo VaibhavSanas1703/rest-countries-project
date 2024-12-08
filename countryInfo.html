@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Details of </title>
+     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+     <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+     <link rel="stylesheet" href="./assets/css/main.css">
+     <link rel="stylesheet" href="./assets/css/countryInfo.css">
+</head>
+<body>
+     
+     <nav class="navbar flex">
+          <div class="logo">
+               <h1 class="main__logo">Where in the world?</h1>
+          </div>
+
+          <div class="dark-mode flex">
+               <i class="ri-moon-fill"></i>
+               <p>Dark Mode</p>
+          </div>
+     </nav>
+
+     <div class="para">
+          <p id="textofCountry">Country / india</p>
+     </div>
+     <div class="back-button">
+          <span><i class="ri-arrow-left-line"></i>&nbsp;Back</span>
+     </div>
+
+     <div class="country-info-container flex">
+          <div class="country-flag">
+               <img src='' alt="" id="country-flag" loading="lazy">
+          </div>
+          <div class="country-info-content">
+               <div class="heading">
+                    <h1 id="countryName"></h1>
+               </div>
+               <div class="country-info">
+                    <div class="country-info-details">
+                    <p><b>Native name : </b>&nbsp;<span id="nativeName"></span></p>
+                    <p><b>Population: </b>&nbsp;<span id="population"></span></p>
+                    <p><b>Region : </b>&nbsp;<span id="region"></span></p>
+                    <p><b>Sub Region : </b>&nbsp;<span id="subregion"></span></p>
+                    <p><b>Capital : </b>&nbsp;<span id="capital"></span></p>
+                    </div>
+                    <div class="country-top">
+                         <p><b>Top Level Domain : </b>&nbsp;<span id="tld"></span></p>
+                         <p><b>Currencies : </b>&nbsp;<span id="curr"></span></p>
+                         <p><b>Languages : </b>&nbsp;<span id="lang"></span></p>
+                    </div>
+               </div>
+               <!-- <div class="border-countries">
+                    <p><b>Border Countries : </b><span id="borderCountry"></span></p>
+               </div> -->
+          </div>
+     </div>
+
+     <script src="./assets/js/countryInfo.js" defer></script>
+</body>
+</html>

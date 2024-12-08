@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>All Details of Country | Made by Vaibhav Sanas</title>
+     <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+     <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+     <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+     
+     <nav class="navbar flex">
+          <div class="logo">
+               <h1 class="main__logo">Where in the world?</h1>
+          </div>
+
+          <div class="dark-mode flex">
+               <i class="ri-moon-fill"></i>
+               <p>Dark Mode</p>
+          </div>
+     </nav>
+
+     <div class="search-container flex">
+               <div class="main-search-box">
+               <input type="text" id="input-box" placeholder="Search for a country...">
+               <div class="search-list">
+                    
+               </div>
+               </div>
+
+     <select id="selectCountry">
+          <option value="renderAllCountries()">Filter By Region</option>
+          <option value="asia">Asia</option>
+          <option value="africa">Africa</option>
+          <option value="americas">Americas</option>
+          <option value="europe">Europe</option>
+          <option value="ceania">Oceania</option>
+     </select>
+     </div>
+
+     <div class="country-container">
+          
+     </div>
+
+     <script src="./assets/js/app.js" defer></script>
+</body>
+</html>
